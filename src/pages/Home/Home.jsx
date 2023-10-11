@@ -38,7 +38,7 @@ const Home = () => {
         setShow(1);
       }
     }
-    let intervalId = setInterval(() => heroFun(), 4000);
+    let intervalId = setInterval(() => heroFun(), 5000);
 
     return () => clearInterval(intervalId);
   }, [dispatch, show]);
