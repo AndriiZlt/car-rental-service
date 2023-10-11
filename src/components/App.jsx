@@ -21,8 +21,8 @@ const App = () => {
         <Route index element={<Home />} />
         <Route path="catalog" element={<Catalog />} />
         <Route path="favorites" element={<Cart />} />
+        <Route path="/*" element={<Navigate to="/" />} />
       </Route>
-      <Route path="/*" element={<Navigate to="/" />} />
     </Routes>
   );
 };
