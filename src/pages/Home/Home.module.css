@@ -15,7 +15,7 @@
 
   width: 100%;
 
-  transition: opacity 3s ease-in-out;
+  transition: all 3s ease-in-out;
 }
 
 .info {
@@ -44,7 +44,7 @@
   position: absolute;
   color: rgb(93, 120, 184);
   font-size: 30px;
-  transition: opacity 3s ease-in-out;
+  transition: all 3s ease-in-out;
 }
 
 .buttons {
