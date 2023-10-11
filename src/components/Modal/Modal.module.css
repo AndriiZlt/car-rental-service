@@ -18,7 +18,7 @@
   font-family: 'Manrope';
   position: relative;
   width: 541px;
-  height: 752px;
+  /* height: 752px; */
   border-radius: 12px;
   background-color: rgba(255, 255, 255, 1);
   padding: 40px;
@@ -113,8 +113,8 @@
 }
 
 .rentalConditions {
-  margin-bottom: 24px;
-  height: 100px;
+  margin-bottom: 16px;
+  /* height: 100px; */
 }
 
 .h3 {
@@ -140,19 +140,20 @@
   background-color: rgba(249, 249, 249, 1);
   border-radius: 35px;
   box-sizing: border-box;
+  margin-bottom: 8px;
 }
 
 .conditionsLi:not(:last-child) {
   margin-right: 8px;
 }
 
-.conditionsLi:nth-of-type(2) {
+/* .conditionsLi:nth-of-type(2) {
   margin-right: 100px;
-}
+} */
 
-.conditionsLi:nth-child(-n + 2) {
+/* .conditionsLi:nth-child(-n + 2) {
   margin-bottom: 8px;
-}
+} */
 
 [id='montserrat'] {
   font-family: 'Montserrat';
