@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/car-rental-service/static/css/main.0a87f9e5.css",
+    "main.js": "/car-rental-service/static/js/main.2c7f8042.js",
+    "static/media/hero1.svg": "/car-rental-service/static/media/hero1.1cabb82775c4852fdc96a635635c1061.svg",
+    "static/media/hero3.svg": "/car-rental-service/static/media/hero3.2cc9e92f28a0cb3a068e796dd71662ae.svg",
+    "static/media/hero2.svg": "/car-rental-service/static/media/hero2.c768a9b30f4e7dda264d11d224dd9ed3.svg",
+    "static/media/Car-Rental.jpg": "/car-rental-service/static/media/Car-Rental.63aba0ac6f1db8f32b43.jpg",
+    "static/media/no-results.png": "/car-rental-service/static/media/no-results.41ade0ad50c52a37aa05.png",
+    "static/media/empty-cart.png": "/car-rental-service/static/media/empty-cart.49d7ad2b13360e514657.png",
+    "index.html": "/car-rental-service/index.html",
+    "static/media/heart.svg": "/car-rental-service/static/media/heart.ac060e771360fcc26ebb0c86173c8396.svg",
+    "static/media/active.svg": "/car-rental-service/static/media/active.97847e9195943f61800c97807e735d4f.svg",
+    "static/media/x.svg": "/car-rental-service/static/media/x.f3cbdd58dc25ca7cbb3d242106b56fb9.svg",
+    "static/media/chevron-up.svg": "/car-rental-service/static/media/chevron-up.6155ebb1460286357e7bbfff67169dca.svg",
+    "static/media/chevron-down.svg": "/car-rental-service/static/media/chevron-down.24cd320d509ea2ebbeb4265f8030bafb.svg",
+    "main.0a87f9e5.css.map": "/car-rental-service/static/css/main.0a87f9e5.css.map",
+    "main.2c7f8042.js.map": "/car-rental-service/static/js/main.2c7f8042.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a87f9e5.css",
+    "static/js/main.2c7f8042.js"
+  ]
+}
