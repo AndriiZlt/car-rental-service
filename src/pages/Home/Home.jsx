@@ -15,17 +15,19 @@ const Home = () => {
   const [opacity3, setOpacity3] = useState(0);
 
   const [show, setShow] = useState(1);
-  const [margin, setMargin] = useState(0);
+  const [margin, setMargin] = useState(455.28125);
   const dispatch = useDispatch();
 
   useEffect(() => {
     const div = document.getElementById('image1');
     const { height } = div.getBoundingClientRect();
-    setMargin(height - 127);
+    if (height > 0) {
+      setMargin(height - 127);
+    }
 
     dispatch(setActivePage('home'));
 
-    const heroFun = () => {
+    function heroFun() {
       if (show === 1) {
         setOpacity1(0);
         setOpacity2(1);
@@ -39,11 +41,12 @@ const Home = () => {
         setOpacity3(0);
         setShow(1);
       }
-    };
+    }
     let intervalId = setInterval(() => heroFun(), 5000);
     return () => clearInterval(intervalId);
   }, [dispatch, show, margin]);
 
+  console.log('margin', margin);
   return (
     <>
       <section className={css.section}>
