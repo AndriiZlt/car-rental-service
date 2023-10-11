@@ -75,19 +75,17 @@ const Home = () => {
       <div className={css.info} style={{ marginTop: margin }}>
         <h1>DriveEasy Rental</h1>
         <h2>The best car rental service in the world </h2>
-        <p className={css.text}>
-          Discover freedom on four wheels with DriveEasy Rental
+        <p className={css.text} style={{ opacity: opacity1 }}>
+          Discover freedom on four wheels with DriveEasy Rental Your journey,
+          your way – start your adventure today!
         </p>
-        <p className={css.text}>
+        <p className={css.text} style={{ opacity: opacity2 }}>
           Whether you're planning a road trip, a business journey, or just need
           a reliable set of wheels, we've got you covered.
         </p>
-        <p className={css.text}>
+        <p className={css.text} style={{ opacity: opacity3 }}>
           Choose from our wide selection of quality vehicles, book with ease,
           and hit the road with confidence.
-        </p>
-        <p className={css.text}>
-          Your journey, your way – start your adventure today!
         </p>
         <div className={css.buttons}>
           <button

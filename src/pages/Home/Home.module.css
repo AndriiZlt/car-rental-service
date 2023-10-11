@@ -41,8 +41,10 @@
 }
 
 .text {
+  position: absolute;
   color: rgb(93, 120, 184);
-  font-size: 20px;
+  font-size: 30px;
+  transition: opacity 3s ease-in-out;
 }
 
 .buttons {
