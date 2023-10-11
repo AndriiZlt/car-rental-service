@@ -13,10 +13,11 @@ const Home = () => {
   const [opacity1, setOpacity1] = useState(1);
   const [opacity2, setOpacity2] = useState(0);
   const [opacity3, setOpacity3] = useState(0);
+
   const [show, setShow] = useState(1);
   const [margin, setMargin] = useState(0);
-
   const dispatch = useDispatch();
+
   useEffect(() => {
     const div = document.getElementById('image1');
     const { height } = div.getBoundingClientRect();
@@ -41,7 +42,7 @@ const Home = () => {
     };
     let intervalId = setInterval(() => heroFun(), 5000);
     return () => clearInterval(intervalId);
-  }, [dispatch, show]);
+  }, [dispatch, show, margin]);
 
   return (
     <>
