@@ -4,9 +4,6 @@ import heart from 'assets/heart.svg';
 import heartRed from 'assets/active.svg';
 import { useSelector } from 'react-redux';
 import carsSelectors from 'redux/cars-selectors';
-// import Modal from 'components/Modal/Modal';
-// import carsOperations from 'redux/cars-operations';
-// import { setModal } from 'redux/cars-slice';
 
 const CarCard = ({
   id,

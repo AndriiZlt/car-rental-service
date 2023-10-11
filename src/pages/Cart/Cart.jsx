@@ -54,7 +54,6 @@ const Cart = () => {
     dispatch(addFavorite(e.target.id));
   };
 
-  // console.log('active=', active, 'car=', car, 'gallery cars=', galleryCars);
   return (
     <section className={css.pageWrapper}>
       <aside className={css.leftAside}>

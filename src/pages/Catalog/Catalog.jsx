@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import carsOperations from 'redux/cars-operations';
 import carsSelectors from 'redux/cars-selectors';
 import css from './Catalog.module.css';
 import capitalize from 'helpers/capitalize';
@@ -24,6 +23,7 @@ import models from 'helpers/models';
 import CarCard from 'components/CarCard/CarCard';
 import noResults from 'assets/no-results.png';
 import Modal from 'components/Modal/Modal';
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 const Catalog = () => {
   const FROM_MAX_MILEAGE = process.env.REACT_APP_FROM_MAX_MILEAGE;
@@ -53,21 +53,17 @@ const Catalog = () => {
   ]);
   const { cars } = useSelector(carsSelectors.getCars);
   const isModalOn = useSelector(carsSelectors.getModalOn);
-  // const [car, setCar] = useState(null);
   const dispatch = useDispatch();
 
   const galleryCars = useSelector(carsSelectors.getFilteredCars);
 
   useEffect(() => {
-    (async () => {
-      dispatch(carsOperations.fetchCars()).then(() =>
-        dispatch(
-          setFilteredCars(
-            filterCars(cars, filteredModels, brand, priceNum, fromNum, toNum)
-          )
-        )
-      );
-    })();
+    dispatch(
+      setFilteredCars(
+        filterCars(cars, filteredModels, brand, priceNum, fromNum, toNum)
+      )
+    );
+
     dispatch(setActivePage('catalog'));
   }, [dispatch]); // eslint-disable-line
 
@@ -217,7 +213,7 @@ const Catalog = () => {
     if (toNum < fromNum) {
       setToNum('');
       setTo(`To`);
-      Notiflix.Notify.warning('Enter valid mileage!');
+      Notify.warning('Enter valid mileage!');
       return;
     }
     setPage(1);
@@ -234,7 +230,7 @@ const Catalog = () => {
         filterCars(cars, filteredModels, brand, priceNum, fromNum, toNum)
       )
     );
-    Notiflix.Notify.success('Filtered!');
+    Notify.success('Filtered!');
   };
 
   const clearFilterHandler = () => {
@@ -248,6 +244,7 @@ const Catalog = () => {
     setFrom('From ');
     setTo('To ');
     setToNum('');
+    setFilteredModels([...models]);
   };
 
   const addFavoriteHandler = e => {
@@ -294,7 +291,6 @@ const Catalog = () => {
   };
 
   const rentalCarHandler = () => {
-    // dispatch(setModal(false));
     Notiflix.Notify.init({
       zindex: 9999999,
     });
@@ -305,7 +301,6 @@ const Catalog = () => {
     <section className={css.pageWrapper}>
       {isModalOn && (
         <Modal
-          // car={car}
           closeModalHandler={closeModalHandler}
           rentalCarHandler={rentalCarHandler}
         />

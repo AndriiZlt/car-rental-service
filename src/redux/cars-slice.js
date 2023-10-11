@@ -37,8 +37,6 @@ export const carsSlice = createSlice({
       } else {
         state.favoriteCars = [...state.favoriteCars, action.payload];
       }
-
-      console.log('active car in slice', state.activeCar);
     },
     setActivePage(state, action) {
       state.activePage = action.payload;
@@ -52,7 +50,6 @@ export const carsSlice = createSlice({
   },
   extraReducers: builder => {
     builder.addCase(carsOperations.fetchCars.fulfilled, (state, action) => {
-      console.log('fetching fulfield');
       state.cars = action.payload;
     });
   },

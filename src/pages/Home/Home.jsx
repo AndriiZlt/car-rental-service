@@ -4,17 +4,21 @@ import css from './Home.module.css';
 import hero1 from 'assets/hero1.svg';
 import hero2 from 'assets/hero2.svg';
 import hero3 from 'assets/hero3.svg';
+import { useDispatch } from 'react-redux';
+import { setActivePage } from 'redux/cars-slice';
 
 var images = [hero1, hero2, hero3];
 
 const Home = () => {
   const TEL_NUMBER = process.env.REACT_APP_TEL;
   const [image, setImage] = useState(images[0]);
+
+  const dispatch = useDispatch();
   useEffect(() => {
+    dispatch(setActivePage('home'));
     const heroFun = () => {
       images.push(images.shift());
       setImage(images[0]);
-      console.log('images', images, image);
     };
     let intervalId = setInterval(() => heroFun(), 5000);
     return () => clearInterval(intervalId);

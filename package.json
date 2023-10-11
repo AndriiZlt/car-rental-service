@@ -1,7 +1,6 @@
 {
   "name": "car-rental-service",
   "version": "0.1.0",
-  "private": true,
   "homepage": "https://AndriiZlt.github.io/car-rental-service/",
   "dependencies": {
     "@redux-devtools/extension": "^3.2.5",
