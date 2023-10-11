@@ -1,0 +1,103 @@
+.hero {
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  top: 70px;
+}
+
+.heroImage {
+  width: 100%;
+}
+
+.info {
+  position: relative;
+  width: 1200px;
+  z-index: 100;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -100px;
+  font-family: 'Manrope';
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+}
+
+.info h1 {
+  margin-bottom: 10px;
+}
+
+.info h2 {
+  margin-bottom: 30px;
+  font-size: 26px;
+}
+
+.text {
+  color: rgb(93, 120, 184);
+  font-size: 20px;
+}
+
+.buttons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+
+.rentalCarBtn {
+  font-family: 'Manrope';
+  width: 168px;
+  height: 44px;
+  background-color: rgba(52, 112, 255, 1);
+  border: 0px;
+  border-radius: 12px;
+  color: white;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  box-sizing: border-box;
+  padding: 0;
+  margin-right: 30px;
+}
+
+.rentalCarBtn:hover {
+  background-color: rgba(11, 68, 205, 1);
+}
+
+.rentalCarBtn:active {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px;
+}
+
+.toCatalogLink {
+  color: white;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.toCatalogBtn {
+  font-family: 'Manrope';
+  width: 168px;
+  height: 44px;
+  background-color: transparent;
+  border: 2px solid rgba(52, 112, 255, 1);
+  border-radius: 12px;
+  color: white;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  box-sizing: border-box;
+  padding: 0;
+  cursor: pointer;
+}
+
+.toCatalogBtn:hover {
+  background-color: rgba(52, 112, 255, 1);
+}
+
+.toCatalogBtn:active {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px;
+  background-color: rgba(11, 68, 205, 1);
+}

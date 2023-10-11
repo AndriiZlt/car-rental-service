@@ -1,0 +1,7 @@
+.container {
+  width: 1248px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 100px 32px 40px;
+  box-sizing: border-box;
+}
